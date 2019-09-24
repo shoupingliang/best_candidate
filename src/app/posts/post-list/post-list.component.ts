@@ -13,10 +13,7 @@ import { PostsServiceService } from '../posts-service.service';
 export class PostListComponent implements OnInit, OnDestroy {
 
   posts: Post[] = [
-  {title: 'Shou-Ping Liang', content: 'Google Cloud Platform certified cloud engineer, an IT consultant with love of cloud services'},
-  {title: 'Donald Trumph', content: 'American President'},
-  {title: 'Charlie Brown', content: 'The main role of Peanuts'},
-  {title: 'Snow White', content: 'The most famous princess on the world'}
+  
 ];
   private postSubscription: Subscription ;
 
