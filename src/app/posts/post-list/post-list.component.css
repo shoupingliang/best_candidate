@@ -4,5 +4,10 @@
 }
 
 .info-text {
-    text-align: center;
+    text-align: left;
+}
+
+.description {
+    text-align: left;
+    display: inherit;
 }

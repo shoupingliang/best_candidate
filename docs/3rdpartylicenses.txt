@@ -89,11 +89,15 @@ THE SOFTWARE.
 
 @angular/material/card
 
+@angular/material/core
+
 @angular/material/expansion
 
 @angular/material/form-field
 
 @angular/material/grid-list
+
+@angular/material/select
 
 @angular/material/table
 
