@@ -1,5 +1,15 @@
 <mat-toolbar color="primary">
-    <span>Find Best Candidate</span>
-    <span class="fill-remain-space"></span>
-    <span>Contact me</span>
+    <mat-toolbar-row>
+        <h1>Shou-Ping Liang</h1>
+        <span class="menu-spacer"></span>
+        <div>
+            <a mat-button [routerLink]="'/'">Find Best Candidate</a>
+            <a mat-button [routerLink]="'/contactme'"> Contact me</a>
+            <a mat-button [routerLink]="'/aboutme'">My experience</a>
+        </div>
+    </mat-toolbar-row>
+
+    <mat-toolbar-row>
+        <span style="font-size: 12px;">I am definately one of your best candidtes.</span>
+    </mat-toolbar-row>
 </mat-toolbar>
