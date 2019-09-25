@@ -93,6 +93,10 @@ THE SOFTWARE.
 
 @angular/material/form-field
 
+@angular/material/grid-list
+
+@angular/material/table
+
 @angular/material/toolbar
 
 @angular/platform-browser
