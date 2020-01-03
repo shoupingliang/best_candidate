@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { MatInputModule, MatCardModule, MatButtonModule, MatExpansionModule, MatTableModule, MatToolbarModule, MatGridListModule, MatIconModule, MatSelectModule } from '@angular/material';
+import { MatInputModule, MatCardModule, MatButtonModule, MatCheckboxModule, MatExpansionModule, MatTableModule, MatToolbarModule, MatGridListModule, MatIconModule, MatSelectModule, MatRippleModule } from '@angular/material';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -13,6 +13,7 @@ import { PostListComponent } from './posts/post-list/post-list.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { PostsComponent } from './posts/posts.component';
+import { PlayComponent } from './contact-me/play/play.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PostsComponent } from './posts/posts.component';
     PostListComponent,
     ContactMeComponent,
     AboutMeComponent,
-    PostsComponent
+    PostsComponent,
+    PlayComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,9 @@ import { PostsComponent } from './posts/posts.component';
     MatTableModule,
     ReactiveFormsModule,
     MatIconModule,
-    MatSelectModule
+    MatSelectModule,
+    MatRippleModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

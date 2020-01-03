@@ -1,49 +1,56 @@
-<form class="example-form" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-    <mat-form-field class="example-full-width">
-        <input matInput placeholder="Company" value="Google">
-    </mat-form-field>
+<mat-grid-list cols="2">
+    <mat-grid-tile>
+        <form class="example-form" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+            <label><h2>Contact me</h2></label>
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="Company" value="Google">
+            </mat-form-field>
 
-    <table class="example-full-width" cellspacing="0">
-        <tr>
-            <td>
-                <mat-form-field class="example-full-width">
-                    <input matInput placeholder="First name">
+            <table class="example-full-width" cellspacing="0">
+                <tr>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="First name">
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Last Name">
+                        </mat-form-field>
+                    </td>
+                </tr>
+            </table>
+            <div class="example-container">
+                <mat-form-field>
+                    <input matInput placeholder="Enter your email" [formControl]="email" required>
+                    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
                 </mat-form-field>
-            </td>
-            <td>
-                <mat-form-field class="example-full-width">
-                    <input matInput placeholder="Last Name">
-                </mat-form-field>
-            </td>
-        </tr>
-    </table>
-    <div class="example-container">
-        <mat-form-field>
-            <input matInput placeholder="Enter your email" [formControl]="email" required>
-            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-        </mat-form-field>
-    </div>
-    <mat-form-field class="example-full-width">
-        <span matPrefix>+49 &nbsp;</span>
-        <input type="tel" matInput placeholder="Telephone">
-    </mat-form-field>
-    <mat-form-field>
-        <mat-label>Font size</mat-label>
-        <mat-select #fontSize value="16px" (selectionChange)="triggerResize()">
-            <mat-option value="10px">10px</mat-option>
-            <mat-option value="12px">12px</mat-option>
-            <mat-option value="14px">14px</mat-option>
-            <mat-option value="16px">16px</mat-option>
-            <mat-option value="18px">18px</mat-option>
-            <mat-option value="20px">20px</mat-option>
-        </mat-select>
-    </mat-form-field>
+            </div>
+            <mat-form-field class="example-full-width">
+                <span matPrefix>+49 &nbsp;</span>
+                <input type="tel" matInput placeholder="Telephone">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Font size</mat-label>
+                <mat-select #fontSize value="16px" (selectionChange)="triggerResize()">
+                    <mat-option value="10px">10px</mat-option>
+                    <mat-option value="12px">12px</mat-option>
+                    <mat-option value="14px">14px</mat-option>
+                    <mat-option value="16px">16px</mat-option>
+                    <mat-option value="18px">18px</mat-option>
+                    <mat-option value="20px">20px</mat-option>
+                </mat-select>
+            </mat-form-field>
 
-    <mat-form-field [style.fontSize]="fontSize.value">
-        <mat-label>What do you want to tell me?(Autosize textarea)</mat-label>
-        <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1" cdkAutosizeMaxRows="5"></textarea>
-    </mat-form-field>
-    <br/>
-    <button mat-raised-button type="submit" color="primary">Submit</button>
-    <p *ngIf="isCollapsed">Thanks for sending information. </p>
-</form>
+            <mat-form-field [style.fontSize]="fontSize.value">
+                <mat-label>What do you want to tell me?(Autosize textarea)</mat-label>
+                <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1" cdkAutosizeMaxRows="5"></textarea>
+            </mat-form-field>
+            <br/>
+            <button mat-raised-button type="submit" color="primary">Submit</button>
+            <p *ngIf="isCollapsed">Thanks for sending information. </p>
+        </form>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <app-play></app-play>
+    </mat-grid-tile>
