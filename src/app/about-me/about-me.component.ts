@@ -8,10 +8,11 @@ export interface PeriodicElement {
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: '2018.08 ~ 2019. 09', name: 'AppDynamics Ltd', weight: 'Associate Consultant', symbol: 'EMEA'},
+  {position: '2019.08 ~ 2019. 10', name: 'Xibix Solutions GmbH', weight: 'Cloud Consultant', symbol: 'Germany'},
+  {position: '2018.08 ~ 2019. 07', name: 'AppDynamics Ltd', weight: 'Associate Consultant', symbol: 'EMEA'},
   {position: '2017.07 ~ 2018. 08', name: 'Huawei Düsseldorf GmbH', weight: 'Digital Marketing Manager', symbol: 'Germany'},
   {position: '2010.07 ~ 2015. 03', name: 'National Taiwan University', weight: 'Senior Consultant', symbol: 'Taiwan'},
-  {position: '2008.08 ~ 2010. 06', name: 'The church in Taipei', weight: 'Volunteer Website Administrator', symbol: 'Taiwan'}
+  {position: '2008.08 ~ 2010. 06', name: 'The church in Taipei & Kobe', weight: 'Volunteer Website Administrator', symbol: 'Taiwan & Japan'}
 ];
 
 const ELEMENT_DATA1: PeriodicElement[] = [
